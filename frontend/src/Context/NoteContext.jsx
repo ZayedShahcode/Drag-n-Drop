@@ -18,7 +18,7 @@ const NoteProvider = ({children})=>{
     
     useEffect(()=>{
     if(response.token ){
-      fetch('http://localhost:3000/notes',{
+      fetch('https://drag-n-drop-server.onrender.com/notes',{
         method:"GET",
         credentials: 'include',
         headers:{

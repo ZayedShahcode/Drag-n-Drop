@@ -6,7 +6,7 @@ import { getUser } from '../Context/UserContext'
 export  const DeleteButton = ({note_id}) => {
     const {response,setResponse} = getUser();
     const handleOnClick = ()=>{
-        fetch('http://localhost:3000/notes',{
+        fetch('https://drag-n-drop-server.onrender.com/notes',{
             method: "DELETE",
             credentials:"include",
             headers : {

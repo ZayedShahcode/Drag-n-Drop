@@ -8,7 +8,7 @@ export default function SignIn() {
   const navigate = useNavigate()
   const handleButtonClick = (e)=>{
     e.preventDefault();
-    fetch('http://localhost:3000/users/signup',{
+    fetch('https://drag-n-drop-server.onrender.com/signup',{
       method:"POST",
       credentials:'include',
       headers:{

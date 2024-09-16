@@ -7,14 +7,6 @@ import SignUp from './page/SignUp'
 
 export default function App() {
   return (
-    // <NoteProvider>
-    //   <div id="app">
-    //     <NotesPage></NotesPage>
-    //   </div>
-    // </NoteProvider>
-
-    
-      
         <UserProvider>
       <Routes>
         <Route path="/" element={<SignUp/>}></Route>

@@ -68,7 +68,7 @@ export const NoteCard = ({ note }) => {
     }
 
     const saveData = (key, value) => {
-        fetch('http://localhost:3000/notes', {
+        fetch('https://drag-n-drop-server.onrender.com/notes', {
             method: "PATCH",
             headers: {
                 'Content-Type': 'application/json'

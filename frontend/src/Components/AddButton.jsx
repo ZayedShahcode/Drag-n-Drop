@@ -9,7 +9,7 @@ const AddButton = ()=>{
     const {response,setResponse} = getUser();
 
     const addNote = ()=>{
-        fetch('http://localhost:3000/notes',{
+        fetch('https://drag-n-drop-server.onrender.com/notes',{
             method:"POST",
             credentials:'include',
             headers:{
