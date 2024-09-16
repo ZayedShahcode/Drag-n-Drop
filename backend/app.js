@@ -14,7 +14,7 @@ const app = express();
 // app.use(cors());
 app.use(cookieparser())
 app.use(express.json());
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:5173/notes'];
+const allowedOrigins = ['https://drag-n-drop-notes.onrender.com/', 'https://drag-n-drop-notes.onrender.com/notes'];
 
 app.use((req, res, next) => {
     const origin = req.get('Origin');
